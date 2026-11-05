@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones y estilos</title>
+
+    <style>
+        /* Estilos de la pagina */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 24px;
+        }
+
+        h1 {
+            color: red;
+            font-family: "Oswald", sans-serif;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<script>
+
+// Funcion para sumar
+function suma(a, b)
+{
+    let resultado = a + b;
+    document.write(resultado);
+}
+
+// Funcion para mostrar texto con color y tamaño
+function texto(cadena, colortexto, tam)
+{
+    document.write(
+        "<font size='" + tam + "' color='" + colortexto + "'><b>"
+        + cadena +
+        "</b></font>"
+    );
+}
+
+// Funcion para mostrar encabezados con estilos
+function texto2(cadena, tam, colortexto, tipografia)
+{
+    document.write(
+        "<h" + tam +
+        " style='color:" + colortexto +
+        "; font-family:" + tipografia +
+        ";'>" +
+        cadena +
+        "</h" + tam + ">"
+    );
+}
+
+// Funcion para saltar de linea
+function salta()
+{
+    document.write("<br>");
+}
+
+// Llamadas a las funciones
+
+suma(40, 20);
+
+salta();
+
+texto("Saludos a todos", "navy", 3);
+
+salta();
+
+texto("Bienvenidos", "orange", 3);
+
+salta();
+
+texto2("Hola H con 3", 3, "blue", "Arial");
+
+texto2("Hola H con 6", 6, "red", "Oswald");
+
+texto2("Encabezado H1", 1, "purple", "Arial");
+
+texto2("Encabezado H2", 2, "green", "Georgia");
+
+texto2("Encabezado H4", 4, "orange", "Verdana");
+
+</script>
+
+</body>
+</html>
